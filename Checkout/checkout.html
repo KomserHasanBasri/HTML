@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .checkout-form {
+        padding: 15px;
+      }
+      .checkout-form .form-group input,
+      .checkout-form .form-group select,
+      .checkout-form .form-group label {
+        width: 200px;
+        display: inline-block;
+      }
+      .form-group {
+        margin-bottom: 30px;
+      }
+      .checkout-form .form-group {
+        margin-bottom: 15px;
+      }
+      .checkout-form fieldset {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <form class="checkout-form" action="">
+        <fieldset>
+          <legend>Kişisel Bilgiler</legend>
+          <div class="form-group">
+            <label for="fisrtName">First Name:</label>
+            <input
+              type="text"
+              name="fisrtName"
+              id="fisrtName"
+              required
+              autofocus
+            />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" name="eMail" id="eMail" required />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Teslimat Adresi</legend>
+          <div class="form-group">
+            <label for="city">Şehir</label>
+            <select name="city" id="city" required>
+              <option value="">Şehir Seç</option>
+              <option value="ank">Ankara</option>
+              <option value="ist">İstanbul</option>
+              <option value="izm">İzmir</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="county">İlçe</label>
+            <select name="county" id="county" required>
+              <option value="">Şehir Seç</option>
+              <option value="kad">Kadıköy</option>
+              <option value="bos">Bostancı</option>
+              <option value="mal">Maltepe</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="Adresi">Adres1</label>
+            <input type="text" name="address" id="address" required />
+          </div>
+          <div class="form-group">
+            <label for="Adresi">Adres2</label>
+            <input type="text" name="addres2" id="address2" />
+          </div>
+          <div>
+            <input type="checkbox" name="sameAddress" id="sameAddress" />
+            <label for="sameAddress">
+              Teslimat adresi ile Fatura adresim aynı</label
+            >
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Ödeme Bilgileri</legend>
+          <div>
+            <input type="radio" name="paymentMethod" id="masterCard" required />
+            <label for="masterCard">Master Card</label>
+            <input type="radio" name="paymentMethod" id="visaCard" required />
+            <label for="visaCard">Visa Card</label>
+            <input type="radio" name="paymentMethod" id="debitCard" required />
+            <label for="debitCard">Debit Card </label>
+          </div>
+          <div class="form-group">
+            <label for="nameOnCard">Kart Üzerindeki İsim</label>
+            <input
+              type="text"
+              name="nameOnCard"
+              id="nameOnCard"
+              required
+              pattern="[A-Za-z]{5,30}"
+            />
+          </div>
+          <div class="form-group">
+            <label for="numOnCard">Kart Numarası</label>
+            <input
+              type="text"
+              name="numOnCard"
+              id="numOnCard"
+              required
+              pattern="[0-9]{16,16}"
+            />
+          </div>
+          <div class="form-group">
+            <label for="expireDate">Son Kullanma Tarihi</label>
+            <input
+              type="text"
+              name="expireDate"
+              id="expireDate"
+              required
+              pattern="[0-9]{5,5}"
+            />
+          </div>
+          <div class="form-group">
+            <label for="cvvNum">CVV</label>
+            <input
+              type="text"
+              name="cvvNum"
+              id="cvvNum"
+              required
+              pattern="[0-9]{3,3}"
+            />
+          </div>
+        </fieldset>
+        <button type="submit">Ödeme Yap</button>
+      </form>
+    </section>
+  </body>
+</html>

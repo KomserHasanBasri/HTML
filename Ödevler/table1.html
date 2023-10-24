@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        margin: 10px;
+      }
+      tr,
+      td {
+        border: 2px solid black;
+      }
+      thead {
+        text-align: center;
+        font-weight: bold;
+      }
+      .lunch {
+        text-align: center;
+        font-weight: bold;
+      }
+      .days {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td colspan="7">Time Table</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="7">Hours</td>
+          <td class="days">Mon</td>
+          <td class="days">Tues</td>
+          <td class="days">Wed</td>
+          <td class="days">Thrus</td>
+          <td class="days">Fri</td>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>Math</td>
+          <td>Arts</td>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>Math</td>
+          <td>Arts</td>
+        </tr>
+        <tr>
+          <td class="lunch" colspan="6">Lunch</td>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>Math</td>
+          <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>Math</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
